@@ -23,7 +23,7 @@ Requires [PyInotify](https://github.com/dsoprea/PyInotify/ "PyInotify")
 
 ## Platforms
 
-Tested on Python 3.5.1 and 2.7.11
+Tested on Python 3.5.1, 2.7.12, 2.7.11
 
 ## License
 
