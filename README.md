@@ -9,7 +9,7 @@ dirwatch was created to solve one use case: When a file is written in the watche
 
 ## Installation
 
-Requires PyInotify: https://github.com/dsoprea/PyInotify/releases
+Requires [PyInotify](https://github.com/dsoprea/PyInotify/ "PyInotify")
 
     pip3 install inotify
 
