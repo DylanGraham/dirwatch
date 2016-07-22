@@ -1,4 +1,4 @@
-# dirwatch
+# dirwatch.py
 
 Watch a file system directory for IN_CLOSE_WRITE changes, and execute a script, with the file name as an argument.
 
@@ -7,13 +7,22 @@ Watch a file system directory for IN_CLOSE_WRITE changes, and execute a script, 
 The incrond project seems to have been abandoned and systemd.path doesn't provide a full replacement.
 dirwatch was created to solve one use case: When a file is written in the watched directory, execute a script with that file name as an argument.
 
+## Installation
+
+Requires PyInotify: https://github.com/dsoprea/PyInotify/releases
+    pip3 install inotify
+
 ## Usage
 
-    dirwatch <watch directory> <script>
+    python3 dirwatch.py <watch directory> <script>
 
-## Example
+### Example
 
-    dirwatch /tmp /home/user/myscript.sh
+    python3 dirwatch.py /tmp /home/user/myscript.sh
+
+## Platforms
+
+Tested on Python 3.5.1 and 2.7.11
 
 ## License
 
