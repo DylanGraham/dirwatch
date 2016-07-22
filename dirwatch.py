@@ -63,7 +63,7 @@ def _main():
 
                     result = subprocess.check_output([exec_script, filename])
                     if result:
-                        print(result.decode(encoding='utf-8'))
+                        print("Command output: " + result.decode(encoding='utf-8'))
     finally:
         i.remove_watch(watch_dir)
 
